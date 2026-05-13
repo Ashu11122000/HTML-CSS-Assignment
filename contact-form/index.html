@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Premium Contact & Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-wrapper">
+      <section class="form-container">
+        <!-- Header -->
+        <div class="form-header">
+          <p class="form-badge">Frontend Master Survey</p>
+          <h1 class="form-title">Developer Registration & Experience Form</h1>
+          <p class="form-subtitle">
+            Complete this premium developer survey to share your profile,
+            preferences, skills, and feedback.
+          </p>
+        </div>
+
+        <!-- Multi-step Wizard -->
+        <div class="wizard-steps">
+          <div class="wizard-step active">1. Personal</div>
+          <div class="wizard-step active">2. Professional</div>
+          <div class="wizard-step active">3. Skills</div>
+          <div class="wizard-step">4. Review</div>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-section">
+          <div class="progress-labels">
+            <span>25%</span>
+            <span>50%</span>
+            <span>75%</span>
+            <span>100%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+
+        <!-- Static Success Panel -->
+        <div class="success-panel">
+          <h3>✓ Submission Preview Ready</h3>
+          <p>
+            Your registration form is complete and ready for final submission.
+          </p>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form">
+          <!-- PERSONAL -->
+          <fieldset class="form-section">
+            <legend>Personal Information</legend>
+
+            <div class="input-grid">
+              <div class="input-group floating-group">
+                <input type="text" id="full-name" required />
+                <label for="full-name">Full Name</label>
+              </div>
+
+              <div class="input-group floating-group">
+                <input type="email" id="email" required />
+                <label for="email">Email Address</label>
+              </div>
+
+              <div class="input-group floating-group">
+                <input type="tel" id="phone" />
+                <label for="phone">Phone Number</label>
+              </div>
+
+              <div class="input-group floating-group">
+                <input type="date" id="dob" />
+                <label for="dob">Date of Birth</label>
+              </div>
+
+              <div class="input-group floating-group">
+                <input type="password" id="password" />
+                <label for="password">Password</label>
+              </div>
+
+              <div class="input-group floating-group">
+                <input type="password" id="confirm-password" />
+                <label for="confirm-password">Confirm Password</label>
+              </div>
+            </div>
+
+            <!-- Password Strength -->
+            <div class="password-strength">
+              <p>Password Strength</p>
+              <div class="strength-bar">
+                <div class="strength-fill"></div>
+              </div>
+              <span>Strong</span>
+            </div>
+
+            <!-- Gender -->
+            <div class="option-group">
+              <p class="option-title">Gender</p>
+              <label><input type="radio" name="gender" /> Male</label>
+              <label><input type="radio" name="gender" /> Female</label>
+              <label><input type="radio" name="gender" /> Other</label>
+            </div>
+          </fieldset>
+
+          <!-- LOCATION -->
+          <fieldset class="form-section">
+            <legend>Location Information</legend>
+
+            <div class="input-grid">
+              <div class="input-group">
+                <label for="country">Country</label>
+                <select id="country">
+                  <option>India</option>
+                  <option>USA</option>
+                  <option>Canada</option>
+                  <option>Germany</option>
+                  <option>Australia</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="city">City</label>
+                <select id="city">
+                  <option>Delhi</option>
+                  <option>Mumbai</option>
+                  <option>Bangalore</option>
+                  <option>Chandigarh</option>
+                </select>
+              </div>
+
+              <div class="input-group full-width">
+                <label for="timezone">Timezone</label>
+                <select id="timezone">
+                  <option>GMT+5:30 (India)</option>
+                  <option>GMT+0 (UK)</option>
+                  <option>GMT-5 (USA)</option>
+                  <option>GMT+10 (Australia)</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- PROFESSIONAL -->
+          <fieldset class="form-section">
+            <legend>Professional Information</legend>
+
+            <div class="input-grid">
+              <div class="input-group">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" />
+              </div>
+
+              <div class="input-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience">
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advanced</option>
+                  <option>Expert</option>
+                </select>
+              </div>
+
+              <div class="input-group full-width">
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" />
+              </div>
+
+              <div class="input-group full-width">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- SOCIAL -->
+          <fieldset class="form-section">
+            <legend>Social Links</legend>
+
+            <div class="input-grid">
+              <div class="input-group">
+                <label for="github">GitHub</label>
+                <input type="url" id="github" />
+              </div>
+
+              <div class="input-group">
+                <label for="linkedin">LinkedIn</label>
+                <input type="url" id="linkedin" />
+              </div>
+
+              <div class="input-group">
+                <label for="portfolio">Portfolio</label>
+                <input type="url" id="portfolio" />
+              </div>
+
+              <div class="input-group">
+                <label for="twitter">Twitter/X</label>
+                <input type="url" id="twitter" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- PREFERENCES -->
+          <fieldset class="form-section">
+            <legend>Preferences</legend>
+
+            <div class="checkbox-group">
+              <p class="option-title">Preferred Technologies</p>
+              <label><input type="checkbox" /> HTML</label>
+              <label><input type="checkbox" /> CSS</label>
+              <label><input type="checkbox" /> JavaScript</label>
+              <label><input type="checkbox" /> React</label>
+              <label><input type="checkbox" /> Tailwind</label>
+              <label><input type="checkbox" /> Node.js</label>
+            </div>
+
+            <div class="checkbox-group">
+              <p class="option-title">Availability</p>
+              <label><input type="checkbox" /> Full-time</label>
+              <label><input type="checkbox" /> Part-time</label>
+              <label><input type="checkbox" /> Freelance</label>
+              <label><input type="checkbox" /> Internship</label>
+            </div>
+          </fieldset>
+
+          <!-- SKILLS -->
+          <fieldset class="form-section">
+            <legend>Skill Levels</legend>
+
+            <div class="slider-group">
+              <label>HTML Skill</label>
+              <input type="range" min="1" max="100" />
+            </div>
+
+            <div class="slider-group">
+              <label>CSS Skill</label>
+              <input type="range" min="1" max="100" />
+            </div>
+
+            <div class="slider-group">
+              <label>JavaScript Skill</label>
+              <input type="range" min="1" max="100" />
+            </div>
+
+            <div class="slider-group">
+              <label>React Skill</label>
+              <input type="range" min="1" max="100" />
+            </div>
+          </fieldset>
+
+          <!-- FEEDBACK -->
+          <fieldset class="form-section">
+            <legend>Feedback</legend>
+
+            <div class="input-group full-width">
+              <label for="comments">Comments / Suggestions</label>
+              <textarea id="comments" rows="5"></textarea>
+              <small class="char-counter">0 / 500 characters</small>
+            </div>
+
+            <div class="slider-group">
+              <label>Frontend Experience Rating</label>
+              <input type="range" min="1" max="10" />
+            </div>
+
+            <div class="option-group">
+              <p class="option-title">Overall Satisfaction</p>
+              <label
+                ><input type="radio" name="satisfaction" /> Excellent</label
+              >
+              <label><input type="radio" name="satisfaction" /> Good</label>
+              <label><input type="radio" name="satisfaction" /> Average</label>
+              <label><input type="radio" name="satisfaction" /> Poor</label>
+            </div>
+          </fieldset>
+
+          <!-- NOTIFICATIONS -->
+          <fieldset class="form-section">
+            <legend>Notifications</legend>
+
+            <div class="checkbox-group">
+              <label><input type="checkbox" /> Email Notifications</label>
+              <label><input type="checkbox" /> SMS Alerts</label>
+              <label><input type="checkbox" /> Weekly Newsletter</label>
+              <label><input type="checkbox" /> Job Alerts</label>
+            </div>
+          </fieldset>
+
+          <!-- TERMS MOCKUP -->
+          <div class="terms-modal-preview">
+            <h3>Terms & Conditions Preview</h3>
+            <p>
+              By submitting this form, you agree to our platform guidelines,
+              privacy policy, and communication preferences.
+            </p>
+          </div>
+
+          <!-- REVIEW -->
+          <div class="review-summary">
+            <h3>Review Summary</h3>
+            <ul>
+              <li>Personal details completed</li>
+              <li>Professional profile added</li>
+              <li>Skills selected</li>
+              <li>Preferences configured</li>
+              <li>Feedback ready</li>
+            </ul>
+          </div>
+
+          <!-- TERMS -->
+          <div class="terms-section">
+            <label>
+              <input type="checkbox" required />
+              I agree to the terms and conditions.
+            </label>
+
+            <label>
+              <input type="checkbox" />
+              Subscribe to newsletter updates.
+            </label>
+          </div>
+
+          <!-- BUTTONS -->
+          <div class="button-group">
+            <button type="reset" class="secondary-btn">Reset</button>
+            <button type="submit" class="primary-btn">Submit Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
