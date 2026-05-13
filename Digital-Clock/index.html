@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Decorative Elements -->
+    <div class="background">
+      <div class="bg-circle circle-one"></div>
+      <div class="bg-circle circle-two"></div>
+      <div class="bg-circle circle-three"></div>
+      <div class="bg-circle circle-four"></div>
+    </div>
+
+    <!-- Notification Banner -->
+    <div class="notification-banner">
+      <p>Clock synchronized successfully</p>
+    </div>
+
+    <!-- Main Application -->
+    <main class="app-container">
+      <!-- Clock Card -->
+      <section class="clock-card" aria-label="Digital Clock Application">
+        <!-- Header -->
+        <header class="clock-header">
+          <div class="brand">
+            <h1>TimeSphere</h1>
+            <p>Modern Digital Clock Interface</p>
+          </div>
+
+          <div class="theme-toggle-container">
+            <label for="theme-switch" class="theme-toggle">
+              <input type="checkbox" id="theme-switch" />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </header>
+
+        <!-- Status -->
+        <section class="status-bar" aria-label="Clock Status">
+          <span class="status-indicator"></span>
+          <p>Live Clock Running</p>
+        </section>
+
+        <!-- Greeting -->
+        <section class="greeting-section" aria-label="Greeting">
+          <h2>Good Evening</h2>
+          <p>Welcome to your digital dashboard</p>
+        </section>
+
+        <!-- Date -->
+        <section class="date-section" aria-label="Current Date">
+          <p class="day-name">Tuesday</p>
+          <p class="full-date">13 May 2026</p>
+        </section>
+
+        <!-- Clock Display -->
+        <section class="clock-display" aria-label="Current Time">
+          <div class="time-box">
+            <span class="time-value">10</span>
+            <span class="time-label">Hours</span>
+          </div>
+
+          <div class="separator">:</div>
+
+          <div class="time-box">
+            <span class="time-value">45</span>
+            <span class="time-label">Minutes</span>
+          </div>
+
+          <div class="separator">:</div>
+
+          <div class="time-box">
+            <span class="time-value">23</span>
+            <span class="time-label">Seconds</span>
+          </div>
+
+          <div class="period-box">
+            <span class="period">PM</span>
+          </div>
+        </section>
+
+        <!-- Controls -->
+        <section class="controls-section" aria-label="Clock Controls">
+          <button class="control-btn">12H</button>
+          <button class="control-btn">24H</button>
+          <button class="control-btn">Reset</button>
+        </section>
+
+        <!-- Timezone -->
+        <section class="timezone-section" aria-label="Timezone Information">
+          <p>Timezone: Asia/Kolkata</p>
+          <p>Location: India</p>
+        </section>
+
+        <!-- Day Progress -->
+        <section class="progress-section" aria-label="Day Progress">
+          <h2>Day Progress</h2>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <p>65% of the day completed</p>
+        </section>
+
+        <!-- Alarm Section -->
+        <section class="alarm-section" aria-label="Alarm">
+          <h2>Alarm Schedule</h2>
+
+          <div class="alarm-box">
+            <span class="alarm-time">06:30 AM</span>
+            <button class="alarm-btn">Set Alarm</button>
+          </div>
+        </section>
+
+        <!-- World Clock -->
+        <section class="world-clock-section" aria-label="World Clock">
+          <h2>World Time</h2>
+
+          <div class="world-grid">
+            <article class="world-card">
+              <h3>New York</h3>
+              <p>08:15 AM</p>
+            </article>
+
+            <article class="world-card">
+              <h3>London</h3>
+              <p>01:15 PM</p>
+            </article>
+
+            <article class="world-card">
+              <h3>Tokyo</h3>
+              <p>09:15 PM</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-grid" aria-label="Clock Statistics">
+          <article class="stat-card">
+            <h3>UTC Offset</h3>
+            <p>+05:30</p>
+          </article>
+
+          <article class="stat-card">
+            <h3>Week Number</h3>
+            <p>20</p>
+          </article>
+        </section>
+
+        <!-- Info Cards -->
+        <section class="info-grid" aria-label="Additional Information">
+          <article class="info-card">
+            <h3>Format</h3>
+            <p>12 Hour Clock</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Theme</h3>
+            <p>Dark Glass UI</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Status</h3>
+            <p>Running</p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Digital Clock Project • HTML + CSS Assignment • Portfolio Ready UI</p>
+    </footer>
+  </body>
+</html>
