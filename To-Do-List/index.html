@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced To-Do List UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- GLOBAL STATE CONTROLS -->
+    <input type="checkbox" id="dark-mode-switch" hidden />
+
+    <input type="radio" name="task-filter" id="filter-all" checked hidden />
+    <input type="radio" name="task-filter" id="filter-active" hidden />
+    <input type="radio" name="task-filter" id="filter-completed" hidden />
+
+    <input type="checkbox" id="delete-task-1" hidden />
+    <input type="checkbox" id="delete-task-2" hidden />
+    <input type="checkbox" id="delete-task-3" hidden />
+    <input type="checkbox" id="delete-task-4" hidden />
+    <input type="checkbox" id="delete-task-5" hidden />
+
+    <main class="todo-app">
+      <!-- Profile Header -->
+      <section class="profile-section">
+        <div>
+          <h2>Hello Ashish!</h2>
+          <p>Stay productive today</p>
+        </div>
+
+        <label for="dark-mode-switch" class="dark-mode-toggle">
+          <span>Light</span>
+          <span>Dark</span>
+        </label>
+      </section>
+
+      <!-- Date -->
+      <section class="date-section">
+        <p>Tuesday, 13 May 2026</p>
+      </section>
+
+      <!-- Header -->
+      <header class="app-header">
+        <h1>My To-Do List</h1>
+        <p>Organize daily tasks efficiently</p>
+      </header>
+
+      <!-- Progress -->
+      <section class="progress-section">
+        <div class="progress-header">
+          <p>Today's Progress</p>
+          <p>40%</p>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="task-stats">
+        <p>5 Tasks Total</p>
+        <p>2 Completed</p>
+      </section>
+
+      <!-- Search (visual only) -->
+      <section class="search-section">
+        <input type="text" placeholder="Search tasks..." />
+      </section>
+
+      <!-- Filter Buttons -->
+      <section class="filter-section">
+        <label for="filter-all">All</label>
+        <label for="filter-active">Active</label>
+        <label for="filter-completed">Completed</label>
+      </section>
+
+      <!-- Input Section (visual only) -->
+      <section class="task-input-section">
+        <form class="task-form">
+          <label for="task-input">Enter a task</label>
+
+          <input
+            type="text"
+            id="task-input"
+            name="task"
+            placeholder="Enter your task here..."
+            required
+          />
+
+          <button type="button">Add Task</button>
+        </form>
+      </section>
+
+      <!-- Task List -->
+      <section class="task-list-section">
+        <ul class="task-list">
+          <!-- TASK 1 -->
+          <li class="task-item completed task-1">
+            <div class="task-content">
+              <div class="task-main">
+                <input type="checkbox" id="task-check-1" checked hidden />
+                <label for="task-check-1" class="checkbox-toggle">☑</label>
+                <span class="task-text">Learn HTML fundamentals</span>
+              </div>
+
+              <div class="task-meta">
+                <span class="priority high">High</span>
+                <span class="category study">Study</span>
+              </div>
+
+              <p class="due-date">Due: 15 May 2026</p>
+            </div>
+
+            <label for="delete-task-1" class="delete-btn">Delete</label>
+          </li>
+
+          <!-- TASK 2 -->
+          <li class="task-item completed task-2">
+            <div class="task-content">
+              <div class="task-main">
+                <input type="checkbox" id="task-check-2" checked hidden />
+                <label for="task-check-2" class="checkbox-toggle">☑</label>
+                <span class="task-text">Practice CSS Selectors</span>
+              </div>
+
+              <div class="task-meta">
+                <span class="priority medium">Medium</span>
+                <span class="category study">Study</span>
+              </div>
+
+              <p class="due-date">Due: 16 May 2026</p>
+            </div>
+
+            <label for="delete-task-2" class="delete-btn">Delete</label>
+          </li>
+          <!-- TASK 3 -->
+          <li class="task-item task-3">
+            <div class="task-content">
+              <div class="task-main">
+                <input type="checkbox" id="task-check-3" hidden />
+                <label for="task-check-3" class="checkbox-toggle">☐</label>
+                <span class="task-text">Build To-Do List UI</span>
+              </div>
+
+              <div class="task-meta">
+                <span class="priority high">High</span>
+                <span class="category work">Work</span>
+              </div>
+
+              <p class="due-date">Due: 17 May 2026</p>
+            </div>
+
+            <label for="delete-task-3" class="delete-btn">Delete</label>
+          </li>
+
+          <!-- TASK 4 -->
+          <li class="task-item task-4">
+            <div class="task-content">
+              <div class="task-main">
+                <input type="checkbox" id="task-check-4" hidden />
+                <label for="task-check-4" class="checkbox-toggle">☐</label>
+                <span class="task-text">Revise Flexbox Layout</span>
+              </div>
+
+              <div class="task-meta">
+                <span class="priority low">Low</span>
+                <span class="category study">Study</span>
+              </div>
+
+              <p class="due-date">Due: 18 May 2026</p>
+            </div>
+
+            <label for="delete-task-4" class="delete-btn">Delete</label>
+          </li>
+
+          <!-- TASK 5 -->
+          <li class="task-item task-5">
+            <div class="task-content">
+              <div class="task-main">
+                <input type="checkbox" id="task-check-5" hidden />
+                <label for="task-check-5" class="checkbox-toggle">☐</label>
+                <span class="task-text">Create Portfolio Website</span>
+              </div>
+
+              <div class="task-meta">
+                <span class="priority medium">Medium</span>
+                <span class="category personal">Personal</span>
+              </div>
+
+              <p class="due-date">Due: 20 May 2026</p>
+            </div>
+
+            <label for="delete-task-5" class="delete-btn">Delete</label>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Footer Actions (visual only) -->
+      <section class="footer-actions">
+        <button type="button">Clear Completed</button>
+        <button type="button">Delete All</button>
+      </section>
+
+      <!-- Empty State -->
+      <section class="empty-state-section">
+        <div class="empty-icon">📋</div>
+        <p>No tasks yet. Add your first task!</p>
+      </section>
+    </main>
+  </body>
+</html>
