@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Scientific Calculator UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Theme Toggle -->
+    <input type="checkbox" id="theme-toggle" hidden />
+
+    <!-- Scientific Mode Toggle -->
+    <input type="checkbox" id="scientific-toggle" hidden />
+
+    <div class="page-wrapper">
+      <!-- Animated Background -->
+      <div class="bg-shape shape-1"></div>
+      <div class="bg-shape shape-2"></div>
+      <div class="bg-shape shape-3"></div>
+
+      <!-- Calculator -->
+      <div class="calculator">
+        <!-- Top Controls -->
+        <div class="top-controls">
+          <label for="theme-toggle" class="theme-switch">
+            <span class="switch-icon">☀</span>
+            <span class="switch-icon">🌙</span>
+          </label>
+
+          <label for="scientific-toggle" class="scientific-switch">
+            Scientific Mode
+          </label>
+        </div>
+
+        <!-- Display -->
+        <div class="display">
+          <p class="history">sin(45) + √25 + log(10)</p>
+          <h1 class="result">6.707</h1>
+        </div>
+
+        <!-- Scientific Panel -->
+        <div class="scientific-panel">
+          <!-- Trigonometric -->
+          <button class="btn scientific">sin</button>
+          <button class="btn scientific">cos</button>
+          <button class="btn scientific">tan</button>
+          <button class="btn scientific">cot</button>
+
+          <button class="btn scientific">sec</button>
+          <button class="btn scientific">csc</button>
+          <button class="btn scientific">asin</button>
+          <button class="btn scientific">acos</button>
+
+          <button class="btn scientific">atan</button>
+          <button class="btn scientific">acot</button>
+          <button class="btn scientific">asec</button>
+          <button class="btn scientific">acsc</button>
+
+          <!-- Logs / Exponents -->
+          <button class="btn scientific">log</button>
+          <button class="btn scientific">ln</button>
+          <button class="btn scientific">10ˣ</button>
+          <button class="btn scientific">eˣ</button>
+
+          <button class="btn scientific">x²</button>
+          <button class="btn scientific">x³</button>
+          <button class="btn scientific">xʸ</button>
+          <button class="btn scientific">EXP</button>
+
+          <!-- Roots -->
+          <button class="btn scientific">√</button>
+          <button class="btn scientific">∛</button>
+          <button class="btn scientific">ʸ√x</button>
+          <button class="btn scientific">1/x</button>
+
+          <!-- Constants -->
+          <button class="btn scientific">π</button>
+          <button class="btn scientific">e</button>
+          <button class="btn scientific">φ</button>
+          <button class="btn scientific">Rand</button>
+
+          <!-- Math Utilities -->
+          <button class="btn scientific">|x|</button>
+          <button class="btn scientific">n!</button>
+          <button class="btn scientific">mod</button>
+          <button class="btn scientific">%</button>
+
+          <!-- Angle / Modes -->
+          <button class="btn scientific">DEG</button>
+          <button class="btn scientific">RAD</button>
+          <button class="btn scientific">GRAD</button>
+          <button class="btn scientific">Hyp</button>
+
+          <!-- Parentheses -->
+          <button class="btn scientific">(</button>
+          <button class="btn scientific">)</button>
+          <button class="btn scientific">⌊x⌋</button>
+          <button class="btn scientific">⌈x⌉</button>
+
+          <!-- Bitwise / Programmer style -->
+          <button class="btn scientific">AND</button>
+          <button class="btn scientific">OR</button>
+          <button class="btn scientific">XOR</button>
+          <button class="btn scientific">NOT</button>
+
+          <!-- Base conversions -->
+          <button class="btn scientific">BIN</button>
+          <button class="btn scientific">OCT</button>
+          <button class="btn scientific">DEC</button>
+          <button class="btn scientific">HEX</button>
+        </div>
+
+        <!-- Main Calculator Buttons -->
+        <div class="buttons">
+          <!-- Memory -->
+          <button class="btn function">MC</button>
+          <button class="btn function">MR</button>
+          <button class="btn function">M+</button>
+          <button class="btn function">M−</button>
+
+          <button class="btn function">MS</button>
+          <button class="btn function">M▾</button>
+          <button class="btn function">AC</button>
+          <button class="btn function">⌫</button>
+
+          <!-- Basic Controls -->
+          <button class="btn function">+/-</button>
+          <button class="btn function">%</button>
+          <button class="btn operator">÷</button>
+          <button class="btn operator">×</button>
+
+          <!-- Numbers -->
+          <button class="btn number">7</button>
+          <button class="btn number">8</button>
+          <button class="btn number">9</button>
+          <button class="btn operator">−</button>
+
+          <button class="btn number">4</button>
+          <button class="btn number">5</button>
+          <button class="btn number">6</button>
+          <button class="btn operator">+</button>
+
+          <button class="btn number">1</button>
+          <button class="btn number">2</button>
+          <button class="btn number">3</button>
+          <button class="btn equal">=</button>
+
+          <button class="btn number zero">0</button>
+          <button class="btn number">.</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
