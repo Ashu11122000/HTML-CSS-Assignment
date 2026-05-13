@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background -->
+    <div class="background-glow"></div>
+
+    <!-- Header -->
+    <header class="navbar">
+      <div class="logo">
+        <h1>PixelVista</h1>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Collections</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <button class="nav-btn">Explore</button>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">Creative Photography Showcase</p>
+        <h2>Discover Stunning Visual Stories From Around the World</h2>
+        <p class="hero-text">
+          Explore curated collections of breathtaking landscapes, portraits,
+          architecture, travel moments, and artistic captures.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="primary-btn">View Gallery</button>
+          <button class="secondary-btn">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+      <h2>Featured Gallery</h2>
+      <p>
+        A collection of modern visual inspirations crafted with responsive CSS
+        Grid layouts.
+      </p>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Nature</button>
+      <button class="filter-btn">Travel</button>
+      <button class="filter-btn">Architecture</button>
+      <button class="filter-btn">Portraits</button>
+      <button class="filter-btn">Abstract</button>
+    </section>
+
+    <!-- Image Gallery -->
+    <main class="gallery-container">
+      <section class="gallery-grid">
+        <!-- Card 1 -->
+        <article class="gallery-card featured">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+            alt="Mountain landscape"
+          />
+          <div class="overlay">
+            <span class="badge">Nature</span>
+            <h3>Mountain Escape</h3>
+            <p>Snow peaks and peaceful wilderness.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e"
+            alt="Forest road"
+          />
+          <div class="overlay">
+            <span class="badge">Travel</span>
+            <h3>Forest Journey</h3>
+            <p>Road through nature.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+            alt="City architecture"
+          />
+          <div class="overlay">
+            <span class="badge">Architecture</span>
+            <h3>Urban Geometry</h3>
+            <p>Modern architectural patterns.</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="gallery-card tall">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+            alt="Portrait"
+          />
+          <div class="overlay">
+            <span class="badge">Portrait</span>
+            <h3>Human Expression</h3>
+            <p>Emotion captured beautifully.</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="gallery-card wide">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+            alt="Beach"
+          />
+          <div class="overlay">
+            <span class="badge">Travel</span>
+            <h3>Ocean Breeze</h3>
+            <p>Relaxing coastal atmosphere.</p>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+            alt="Lake view"
+          />
+          <div class="overlay">
+            <span class="badge">Nature</span>
+            <h3>Lake Reflection</h3>
+            <p>Mirror-like calm waters.</p>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b"
+            alt="Abstract art"
+          />
+          <div class="overlay">
+            <span class="badge">Abstract</span>
+            <h3>Creative Colors</h3>
+            <p>Visual abstract textures.</p>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+            alt="Portrait closeup"
+          />
+          <div class="overlay">
+            <span class="badge">Portrait</span>
+            <h3>Focused Gaze</h3>
+            <p>Close emotional storytelling.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Stats -->
+    <section class="stats-section">
+      <div class="stat-card">
+        <h3>250+</h3>
+        <p>Images</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>35+</h3>
+        <p>Collections</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>120K+</h3>
+        <p>Visitors</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>98%</h3>
+        <p>Satisfaction</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <h2>Join Our Creative Community</h2>
+      <p>
+        Subscribe for curated visual inspiration, new collections, and design
+        updates.
+      </p>
+
+      <form class="cta-form">
+        <input type="email" placeholder="Enter your email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Responsive Image Gallery • HTML + CSS Portfolio Project</p>
+    </footer>
+  </body>
+</html>
